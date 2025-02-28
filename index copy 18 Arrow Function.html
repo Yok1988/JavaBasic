@@ -1,0 +1,45 @@
+<!-- กดเครื่องหมาย สร้างโครงสร้าง ! +Tab + enter -->
+<!-- https://www.youtube.com/watch?v=DzjO4d9nh_k&t=4920s -->
+<!-- เปิด Console browser Ctrl+Shift+i  -->
+<!-- Live serverกดค้าง Alt+L+O --> 
+<!-- comment กด Alt+/ -->
+<!-- กด Alt + 9 + 6 จะได้ ` ` -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>   
+    
+    <script> 
+        //JavaScript Arrow Function ประโยชน์ให้โค้ดสั่นลง
+        //หรือ ฟังชันลูกศรใน =>  JavaScript จะให้ไวยากรณ์ที่สั้นกว่าสำหรับการเขียนฟังก์ชัน
+        console.log("======  Arrow Function =>  ฟังชันลูกศร  =======");
+        //Traditional function expression
+        function add(a,b){
+            return a+b;
+        }
+        //Arrow function
+        //const add = (a,b) => a + b;
+
+        const adds = (a,b) => a + b; //function Arrow ย่อ แบบมี parameter
+        console.log(adds(5,10)); //เรียกใช้งาน
+
+        const greet = () => "Hello World"; 
+        console.log(greet());
+
+        const square = x => x * x;
+        console.log(square(2));
+
+        const myFunc = () => {
+            console.log("This is my Arrow Function")
+        };
+        console.log(myFunc());
+
+    </script>
+
+</body>
+</html>

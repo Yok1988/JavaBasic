@@ -1,0 +1,34 @@
+<!-- กดเครื่องหมาย สร้างโครงสร้าง ! +Tab + enter -->
+<!-- https://www.youtube.com/watch?v=DzjO4d9nh_k&t=4920s -->
+<!-- เปิด Console browser Ctrl+Shift+i  -->
+<!-- Live serverกดค้าง Alt+L+O --> 
+<!-- comment กด Alt+/ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>    
+    
+    <script>         
+
+        //JavaScript Destructuring แยก property ของ object แล้วทำเป็นตัวแปร
+        console.log("=== JavaScript Destructuring แยก property ของ object ==");
+        const person ={
+            firdtName:"John",
+            lastName:"Doe",
+            age:30
+        };
+        let {firdtName,lastName,age}=person;
+        console.log(firdtName,lastName,age);
+        //เปลี่ยนชื่อ :
+        let {firdtName:FN,lastName:LN,age:AG}=person;
+        console.log(FN,LN,AG);    
+       
+    </script>
+
+</body>
+</html>

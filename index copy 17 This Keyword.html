@@ -1,0 +1,46 @@
+<!-- กดเครื่องหมาย สร้างโครงสร้าง ! +Tab + enter -->
+<!-- https://www.youtube.com/watch?v=DzjO4d9nh_k&t=4920s -->
+<!-- เปิด Console browser Ctrl+Shift+i  -->
+<!-- Live serverกดค้าง Alt+L+O --> 
+<!-- comment กด Alt+/ -->
+<!-- กด Alt + 9 + 6 จะได้ ` ` -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>    
+    
+    <button onclick="this.style.display='none';">Click to remove</button>
+
+    <script> 
+        console.log(this);
+
+        function myFunc(){
+            console.log("This insie a function ",this);
+        }
+        myFunc();
+
+        //JavaScript This Keyword
+        //จะอ้างอิงวัตถุที่แตกต่าง ขึ้นอยู่กับวิธีการใช้งาน
+        console.log("====== การใช้ This Keyword =======");
+    
+        //สร้าง Object   ประกอบ ตัวแปร ชื่อ = { xx: ค่า ,..}
+        const person = {//Object
+            firstName : "John",
+            lastName : "Doe",
+            fullName(){//function
+                //return person.firstName + " " + person.lastName;
+                return this.firstName + " " + this.lastName;
+            }
+        }
+        console.log(person.fullName());   
+
+       
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!-- กดเครื่องหมาย สร้างโครงสร้าง ! +Tab + enter -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>    
+    
+    <script> 
+
+        //Method..................ที่ต้องใช้
+
+        //JavaScript forEach()
+
+        const numbers = [1,2,3,4,5];  
+        //forEach()======
+        numbers.forEach( function(number) {
+            console.log(number);
+            // 1
+            // 2
+            // 3
+            // 4
+            // 5
+        });
+
+        //map() 1=======
+        const numbersMap = [5,4,3,2,1];
+        const doubled = numbersMap.map(function(number){
+            console.log(number);
+            // 1
+            // 2
+            // 3
+            // 4
+            // 5
+            return number * 2 ;
+        }); 
+        console.log(doubled);   //[10,8,6,4,2]
+
+        //map() 2========
+        const numbers2 = [1,2,3,4,5];  
+        const doubled2 = numbers2.map(function(number)
+        {
+            return number * 2;
+        });
+        console.log("map",doubled2);   //output [2,4,6,8,10]
+
+        //filter()==========
+        const numbersfilter = [1,2,3,4,5]; 
+        const even = numbersfilter.filter(function(number)
+        {
+            return number % 2 === 0;
+        });
+        console.log("filter()",even);
+
+        //reduce()==========
+        const numReduce = [1,2,3,4,5]; 
+        const sum = numReduce.reduce(function(total,number)
+        {
+            console.log(total+number);
+            return total+number;
+            //1+2=3
+            //3+3=6
+            //6+4=10
+            //10+5=15
+        },0); //ค่าเริ่มต้น 0
+        console.log("reduce()",sum);
+
+        //some()==========
+        const numSome = [1,2,3,4,5]; 
+        const hasEven = numSome.some(function(number)
+        {
+            return number % 2 === 0; //Mod
+        }); 
+        console.log("some()",hasEven);
+
+        //every()==========
+        const numEvery = [-5,2,3,4,5]; 
+        const allPositive = numEvery.every(function(number)
+        {
+            return number > 0;
+        }); 
+        console.log("every()",allPositive);//output false true
+
+        //find()==========
+        const numFind = [1,2,3,4,5]; 
+        const firstEven = numFind.find(function(number)
+        {
+            return number % 2 === 0; //Mod หาเศษเท่ากับ 0 นำค่าออกมา
+        }); 
+        console.log("find()",firstEven);//output 2 ตัวแรกที่ตรงตาม 0
+
+        
+        //findIndex()==========
+                            //0,1,2,3,4
+        const numFindIndex = [1,2,3,4,5]; 
+        const firstEvenIndex = numFindIndex.findIndex(function(number)
+        {
+            return number % 2 === 0; //Mod หาเศษเท่ากับ 0 นำค่าออกมา
+        }); 
+        //ถ้าไม่ตรงตามเงื่อนไขจะแสดง -1
+        console.log("find()",firstEvenIndex);//output 1 
+
+    </script>
+
+</body>
+</html>

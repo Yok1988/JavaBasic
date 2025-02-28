@@ -1,0 +1,58 @@
+<!-- กดเครื่องหมาย สร้างโครงสร้าง ! +Tab + enter -->
+<!-- https://www.youtube.com/watch?v=DzjO4d9nh_k&t=4920s -->
+<!-- เปิด Console browser Ctrl+Shift+i  -->
+<!-- Live serverกดค้าง Alt+L+O --> 
+<!-- comment กด Alt+/ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>    
+    
+    <script>    
+        //Global Var
+        var x = 20;
+        var y = 30;
+        var z = 40 ;     
+
+        //JavaScript Scope
+        console.log("====== JavaScript Scope { } ==========");
+        console.log("Block Scope { }");
+        {
+            let name = "John Doe";
+            console.log(name);
+        }
+        console.log(name);
+
+        function localFunc(){ //สร้าง function
+            // Local Scope
+            let carName = "Honda"
+            console.log("Local Scope",carName);
+        }
+        localFunc(); //เรียกใช้งาน function
+
+        console.log("======  Function Scope =======");
+        function myFunction(){
+             // Local Scope
+            var firstName = "John"; //Function Scope
+            let lastName = "Doe";//Function Scope
+            const age = 36;//Function Scope
+            console.log(firstName);
+            console.log(lastName);
+            console.log(age);
+            console.log(x);
+            console.log(y);
+            console.log(z);
+        }
+        myFunction();     
+
+        
+       
+    </script>
+
+</body>
+</html>

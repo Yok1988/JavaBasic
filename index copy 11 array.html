@@ -1,0 +1,54 @@
+<!-- กดเครื่องหมาย สร้างโครงสร้าง ! +Tab + enter -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>    
+    
+    <script> 
+
+        //JavaScript Arrays การทำงานกับ array
+        const lange = ["HTML","CSS","JS"]; //0,1,2 array literal
+        console.log(lange);         
+        
+        //2..ลบค่าตัวสุดท้าย .pop()    
+        console.log(lange.pop());
+      
+        //1...เพิ่มค่า .push(); 
+        console.log(lange.push("Banana"));//เพิ่มค่า
+        console.log(lange); //["HTML","CSS","JS","Banana"]     
+        
+        //3..ลบค่าตัวแรก .shift()   
+        console.log(lange.shift());
+        console.log(`shift ล่าสุด ${lange}`);
+
+        //4..เพิ่มค่าตัวแรกarray .unshift()   
+        console.log(lange.unshift("Apple"));
+
+        console.log(`unshift ล่าสุด ${lange}`);
+
+        const cars = new Array("Honda","Toyota","Nissan"); //New kryword
+        console.log(cars);         
+        // 0:"Honda"
+        // 1:"Toyota"
+        // 2:"Nissan"
+        // lengt 3
+
+        const concatArray = lange.concat(cars);
+        console.log(concatArray);
+        // "Apple",
+        // "CSS",
+        // "Banana",
+        // "Honda",
+        // "Toyota",
+        // "Nissan"
+
+
+
+    </script>
+
+</body>
+</html>

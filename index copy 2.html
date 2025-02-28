@@ -1,0 +1,41 @@
+<!-- กดเครื่องหมาย สร้างโครงสร้าง ! +Tab + enter -->
+<!-- https://www.youtube.com/watch?v=DzjO4d9nh_k&t=4920s -->
+<!-- เปิด Console browser Ctrl+Shift+i  -->
+<!-- Live serverกดค้าง Alt+L+O --> 
+<!-- comment กด Alt+/ -->
+<!-- กด Alt + 9 + 6 จะได้ ` ` -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <p id="demo">This is an paragraph</p>    
+    <button type="button" onclick="myFucntion();">Change Content</button>
+
+    <script>
+        //Single comment
+
+        /*  กด Ctrl+/  uncomment กด Ctrl+/
+          This id muti-line comments
+          จัดย่อหน้า Tab 
+          จัดย่อหน้า Shift+Tab
+          จัดระเบียบโค้ด Shirt+Alt+F Format Document
+        */
+
+        document.write("Hello JS");
+        alert("Wellcome to my webstie");
+
+        function myFucntion(){
+            document.getElementById("demo").innerHTML ="Hello World";          
+        }
+
+        console.log("Hello From Console");
+        console.log(document.getElementById("demo"));
+    </script>
+
+</body>
+</html>

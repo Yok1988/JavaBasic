@@ -1,0 +1,51 @@
+<!-- กดเครื่องหมาย สร้างโครงสร้าง ! +Tab + enter -->
+<!-- https://www.youtube.com/watch?v=DzjO4d9nh_k&t=4920s -->
+<!-- เปิด Console browser Ctrl+Shift+i  -->
+<!-- Live serverกดค้าง Alt+L+O --> 
+<!-- comment กด Alt+/ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>    
+    
+    <script>         
+
+        //JavaScript Destructuring แยก property ของ object แล้วทำเป็นตัวแปร
+        console.log("=== JavaScript Destructuring แยก property ของ object ==");
+        const person ={
+            firstName:"John",
+            lastName:"Doe",
+            age:30
+        };
+        let {firstName,lastName,age} = person;
+        console.log(firstName,lastName,age);
+        //เปลี่ยนชื่อ : object property ailas
+        let {firstName:FN,lastName:LN,age:AG,country ="TH"} = person;
+        console.log(FN,LN,AG,country);    
+
+        const fruits =["Apple","Banana","Orange","Mango"]
+        let [fruit1,fruit2,fruit3] = fruits;
+        console.log(fruit1,fruit2,fruit3);
+
+        const numbers = [10,20,30,40,50,60,70,80,90];
+        const [num1,num2,...rest] = numbers; // ...rest ดึงค่าที่เหลือใน Array ทั้งหมด
+        console.log(num1);
+        console.log(num2);
+        console.log(rest);
+
+        let FirstName1 = "John";
+        let LastName1 ="Doe";
+        console.log(FirstName1,LastName1);
+        console.log("===  []=[]สลับค่า  ======");
+        [FirstName1,LastName1]=[LastName1,FirstName1] //สลับค่า ลำดับใหม่
+        console.log(FirstName1,LastName1);
+       
+    </script>
+
+</body>
+</html>

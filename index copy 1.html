@@ -1,0 +1,89 @@
+<!-- กดเครื่องหมาย สร้างโครงสร้าง ! +Tab + enter -->
+<!-- https://www.youtube.com/watch?v=DzjO4d9nh_k&t=4920s -->
+<!-- เปิด Console browser Ctrl+Shift+i  -->
+<!-- Live serverกดค้าง Alt+L+O --> 
+<!-- comment กด Alt+/ -->
+<!-- กด Alt + 9 + 6 จะได้ ` ` -->
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- Inline Script -->
+    <button onclick="alert('This is an inline script!');">Click Me</button>
+    <button onclick="showMessage()";>Click</button>
+    <button onclick="showMessage()";>Click 2</button>
+    
+    <!-- internal Script -->
+    <!-- <script>
+        function showMessage(){
+            alert('This is an Internal script!');
+        }
+    </script> -->
+
+    <!-- External Script -->
+     
+    <script src="script.js"> </script>
+    
+
+    <p id="demo">This is an paragraph</p>
+    <button type="button" onclick="myFucntion();">Change Content</button>
+
+    <script>
+
+        function myFucntion(){
+            document.getElementById("demo").innerHTML ="Hello World";
+        }
+
+        //=========== ตัวแปร
+        var changeName ="Yok";
+        var changeName = [1,2,3];
+        console.log(changeName);
+
+        const name = "John Doe"; //ไม่สร้างซ้ำ ไม่เปลี่ยนค่า
+        name ="Jane Doe";
+        console.log(name);
+
+
+        let x = 5;
+        let y = 10;
+        let z = x + y;
+        console.log(z);
+
+        const a = 10 ;
+        const b = 20;
+        const c = a * b;
+        console.log(c);
+
+        //==============
+        //Global Scope
+          {
+           var xx = 99 ;
+           const aa = 5;
+           let bb = 10;
+        }       
+
+        console.log(xx);
+        console.log(aa);
+        console.log(bb);
+
+    </script>
+
+
+</body>
+</html>
+
+<!-- 
+// const ชื่อตัวแปร = { ชื่อตัวแปร:"ค่า"; }
+// function ชื่อฟังก์ชัน(){ return "การทำงาน , ค่า"; }
+// arrow >>  const ชื่อ = () => "Hello World"; 
+// arrow >>  const square = x => x * x;
+// arrow >>  const adds = (a,b) => a + b; //function Arrow ย่อ แบบมี parameter
+// const myFunc = () => {
+    //console.log("This is my Arrow Function")
+//}; -->

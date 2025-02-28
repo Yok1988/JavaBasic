@@ -1,0 +1,43 @@
+<!-- กดเครื่องหมาย สร้างโครงสร้าง ! +Tab + enter -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="myBody">  
+
+    <button onclick="alert('Hello JS');">Click Me</button>
+
+    <p id = "myText">Change this text.</p>
+    <button id="myBtn">Click to change text</button>
+    <button id="changeColorBtn">Change Color</button>
+
+    <script> 
+
+      const button = document.getElementById("myBtn");
+      const changeColorBtn = document.getElementById("changeColorBtn");
+
+      button.addEventListener("click",function(){
+        const myText = document.getElementById("myText");
+        myText.textContent = "The text has been changed.";
+      });
+
+
+      //JavaScript Events
+      changeColorBtn.addEventListener("mouseover",function(){
+        const myBody = document.getElementById("myBody");
+        myBody.style.backgroundColor = "pink";
+      });
+
+      changeColorBtn.addEventListener("mouseout",function(){
+        const myBody = document.getElementById("myBody");
+        myBody.style.backgroundColor = "blue";
+      });
+
+
+    </script>
+
+</body>
+</html>
